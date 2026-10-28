@@ -71,18 +71,20 @@ The sidebar keeps common destinations close by without taking up much of the scr
 
 The exact experience depends on YouTube's current interface and the settings you choose.
 
-## Install it locally
+## Install CineTube
 
-CineTube is intended for local installation in a Chromium based browser.
+The easiest way is to download the ready to use ZIP from the [Releases page](https://github.com/Kchecksfiles/CineTube/releases). If you want to inspect the code first, you can download the repository instead.
 
-1. Download this repository and extract it.
-2. Open `chrome://extensions/` in your browser.
+1. Download the CineTube ZIP and extract it. Keep the extracted folder somewhere you will not accidentally delete it.
+2. Open `chrome://extensions/` in Chrome or `brave://extensions/` in Brave.
 3. Turn on **Developer mode**.
-4. Select **Load unpacked**.
-5. Choose the project folder containing `manifest.json`.
-6. Open YouTube in a new tab.
+4. Click **Load unpacked**.
+5. Select the extracted CineTube folder that contains `manifest.json`.
+6. Open YouTube or refresh an existing YouTube tab.
 
-To update it later, download the latest files and click **Reload** on the CineTube extension card.
+**Can I drag and drop the folder?** Chrome and Brave generally do not install an unpacked extension by dropping its folder onto the extensions page. **Load unpacked** is the reliable method. Drag and drop is supported for some packaged `.crx` extensions, which is a different format.
+
+To update CineTube, download and extract the latest release, then use **Load unpacked** to select the new folder, or replace the files in your existing folder and click **Reload** on the CineTube extension card.
 
 ## Built with
 
