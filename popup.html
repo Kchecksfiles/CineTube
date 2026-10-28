@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 280px; margin: 0; padding: 16px; background: #141414; color: #fff; font: 14px "Helvetica Neue", Arial, sans-serif; }
+  h1 { margin: 0 0 12px; font-size: 18px; font-weight: 900; letter-spacing: -.02em; color: #e50914; }
+  label { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 0; cursor: pointer; }
+  label + label { border-top: 1px solid #2c2c2c; }
+  input[type=checkbox] { accent-color: #e50914; width: 18px; height: 18px; }
+  select { background: #000; color: #fff; border: 1px solid #555; border-radius: 4px; padding: 4px 6px; font: inherit; }
+  button { width: 100%; margin-top: 14px; padding: 10px; border: 0; border-radius: 4px; background: #e50914; color: #fff; font: 700 14px inherit; cursor: pointer; }
+  button:hover { filter: brightness(1.1); }
+</style>
+</head>
+<body>
+  <h1>CineTube</h1>
+  <label>Hover preview <input type="checkbox" data-key="preview"></label>
+  <label>Preview sound <input type="checkbox" data-key="sound"></label>
+  <label>Watch page <select data-key="watchLayout"><option value="cinema">Cinema</option><option value="minimal">Minimal</option><option value="classic">Default</option></select></label>
+  <label>Auto full screen <input type="checkbox" data-key="autoFullscreen"></label>
+  <button id="all">All settings</button>
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

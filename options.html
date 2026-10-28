@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CineTube settings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #141414; color: #fff; font: 15px/1.45 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+  h1 { margin: 0; font-size: 34px; font-weight: 900; letter-spacing: -.03em;
+       background: linear-gradient(180deg, #fff 5%, #ff8a91 55%, #e50914 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { margin: 0 0 32px; color: #8c8c8c; }
+  h2 { margin: 36px 0 8px; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #8c8c8c; }
+  .group { background: #1f1f1f; border-radius: 8px; overflow: hidden; }
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 16px 20px; }
+  .row + .row { border-top: 1px solid #2c2c2c; }
+  .row b { display: block; font-weight: 600; }
+  .row small { display: block; margin-top: 2px; color: #8c8c8c; font-size: 13px; }
+  select { background: #000; color: #fff; border: 1px solid #555; border-radius: 4px; padding: 8px 10px; font: inherit; }
+  /* switch */
+  .sw { position: relative; flex: none; width: 46px; height: 26px; }
+  .sw input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+  .sw span { position: absolute; inset: 0; border-radius: 13px; background: #444; transition: background .2s; pointer-events: none; }
+  .sw span::after { content: ""; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; transition: transform .2s; }
+  .sw input:checked + span { background: #e50914; }
+  .sw input:checked + span::after { transform: translateX(20px); }
+  .sw input:focus-visible + span { outline: 2px solid #fff; outline-offset: 2px; }
+  textarea { width: 100%; height: 190px; padding: 12px; background: #000; color: #fff; border: 1px solid #555; border-radius: 4px; font: inherit; resize: vertical; }
+  .topics { padding: 16px 20px; }
+  .topics small { display: block; margin-bottom: 8px; color: #8c8c8c; font-size: 13px; }
+  button { border: 0; border-radius: 4px; padding: 10px 18px; font: 700 14px inherit; cursor: pointer; background: #333; color: #fff; }
+  button:hover { background: #444; }
+  #status { color: #46d369; font-size: 13px; min-height: 1em; }
+  footer { display: flex; align-items: center; gap: 16px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<main>
+  <header><h1>CineTube settings</h1><span id="status" role="status"></span></header>
+  <p class="sub">Changes save instantly and apply to open YouTube tabs. The defaults are the recommended setup.</p>
+  <div id="app"></div>
+  <footer><button id="reset">Reset everything to defaults</button></footer>
+</main>
+<script src="config.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
