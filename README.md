@@ -36,7 +36,7 @@ A featured area sits above the video rows, giving the page more of a streaming s
 
 ### Browse by topic and channel
 
-Topic rows bring related videos together, while channel discovery and subscription content make it easier to find something to watch.
+Browse themed rows for gaming, movie trailers, sports highlights and tech reviews, alongside channels and subscription content.
 
 <p align="center">
   <img src="assets/topic-rows.png" alt="CineTube topic rows for podcasts and sports" width="49%">
@@ -45,7 +45,7 @@ Topic rows bring related videos together, while channel discovery and subscripti
 
 ### Hover previews
 
-Video cards can show previews through YouTube's player when you hover over them. The speed and behaviour can vary, and this is still an area to improve.
+Hovering over a video can reveal a larger preview card with playback, title, channel and video details. Preview behaviour can vary with YouTube's interface.
 
 <img src="assets/hover-preview.png" alt="CineTube video card with a hover preview" width="100%">
 
@@ -71,20 +71,18 @@ The sidebar keeps common destinations close by without taking up much of the scr
 
 The exact experience depends on YouTube's current interface and the settings you choose.
 
-## Install CineTube
+## Install it locally
 
-The easiest way is to download the ready to use ZIP from the [Releases page](https://github.com/Kchecksfiles/CineTube/releases). If you want to inspect the code first, you can download the repository instead.
+CineTube is intended for local installation in a Chromium based browser.
 
-1. Download the CineTube ZIP and extract it. Keep the extracted folder somewhere you will not accidentally delete it.
-2. Open `chrome://extensions/` in Chrome or `brave://extensions/` in Brave.
+1. Download this repository and extract it.
+2. Open `chrome://extensions/` in your browser.
 3. Turn on **Developer mode**.
-4. Click **Load unpacked**.
-5. Select the extracted CineTube folder that contains `manifest.json`.
-6. Open YouTube or refresh an existing YouTube tab.
+4. Select **Load unpacked**.
+5. Choose the project folder containing `manifest.json`.
+6. Open YouTube in a new tab.
 
-**Can I drag and drop the folder?** Chrome and Brave generally do not install an unpacked extension by dropping its folder onto the extensions page. **Load unpacked** is the reliable method. Drag and drop is supported for some packaged `.crx` extensions, which is a different format.
-
-To update CineTube, download and extract the latest release, then use **Load unpacked** to select the new folder, or replace the files in your existing folder and click **Reload** on the CineTube extension card.
+To update it later, download the latest files and click **Reload** on the CineTube extension card.
 
 ## Built with
 
